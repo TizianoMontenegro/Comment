@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-menu{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 50px;
+    padding: 0 1.5em;
+    gap: 1.5em;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    font-weight: 100;
+    transition: color var(--trans);
+}
+.nav-menu a:hover{
+    color: var(--primary-color);
+}
+
