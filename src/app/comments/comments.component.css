@@ -3,7 +3,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 .wrapper{
-    /* background-color: beige; */
+    width: 100%;
     height: auto;
     padding: 0 150px;
     padding-bottom: 2em;

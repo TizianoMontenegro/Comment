@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <h1 class="title">Completa el formulario</h1>
+    <form class="form">
+        <input  class="field" type="text" [(ngModel)]="username" name="username" placeholder="Nombre de usuario">
+        <div class="date">
+            <p class="date-text">Anadir imagen</p>
+            <input  class="field" type="file" [(ngModel)]="image" name="image" placeholder="seleccionar imagen">
+        </div>
+        <textarea  class="field" [(ngModel)]="comment" name="image" placeholder="Comentario"></textarea>
+        <input  class="field" type="submit" value="+" (click)="addNewComment()">
+    </form>
+</div>

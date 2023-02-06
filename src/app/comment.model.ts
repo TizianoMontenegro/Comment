@@ -1,4 +1,4 @@
-export class CommentModel {
+export class Comment {
     username: string;
     comment: string;
     image: string;
