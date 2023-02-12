@@ -1,11 +1,13 @@
 <div class="wrapper">
     <h1 class="title">Completa el formulario</h1>
     <form class="form">
-        <input  class="field" type="text" [(ngModel)]="username" name="username" placeholder="Nombre de usuario">
-        <div class="date">
+        <input class="field" type="text" [(ngModel)]="username" name="username" placeholder="Nombre de usuario">
+        <label for="input-file" class="date">
             <p class="date-text">Anadir imagen</p>
-            <input  class="field" type="file" [(ngModel)]="image" name="image" placeholder="seleccionar imagen">
-        </div>
+            <input (change)="catchFile($event)" id="input-file" class="field" type="file" [(ngModel)]="image" name="image" placeholder="seleccionar imagen">
+        </label>
+        <!-- <input #inputImage (change)="inpTarget($event)" class="field" type="text" name="img" placeholder="url de imagen" [(ngModel)]="image"> -->
+        <!-- <img id="img" src="{{ inputImage.value }}" alt="{{ inputImage.value }}"> -->
         <textarea  class="field" [(ngModel)]="comment" name="image" placeholder="Comentario"></textarea>
         <input  class="field" type="submit" value="+" (click)="addNewComment()">
     </form>

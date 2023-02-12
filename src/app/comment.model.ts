@@ -2,7 +2,7 @@ export class Comment {
     username: string;
     comment: string;
     image: string;
-    date: string;
+    date: string
     constructor (
         username: string, 
         comment: string, 
